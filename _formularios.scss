@@ -1,0 +1,49 @@
+form {
+label {
+    color: $negro;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: $gris-claro;
+}
+}
+
+.formulario-contacto {
+.mb-3 {
+    background-color: $negro;
+    padding: 1rem;
+    border-radius: 0.6rem;
+
+    label,
+    p {
+    color: $blanco;
+    }
+
+    input,
+    textarea {
+    width: 100%;
+    color: $blanco;
+    background-color: transparent;
+    border: 1px solid $gris-borde;
+
+    &:focus {
+        outline: none;
+        border-color: $blanco;
+    }
+    }
+}
+}
+
+.btn-formulario {
+background-color: $color-rojo;
+color: $blanco;
+padding: 0.7rem 1.6rem;
+border-radius: 1.6rem;
+font-weight: 600;
+transition: 0.3s;
+
+&:hover {
+    background-color: $color-rojo-hover;
+}
+}

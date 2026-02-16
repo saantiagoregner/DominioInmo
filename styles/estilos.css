@@ -1,320 +1,294 @@
+@charset "UTF-8";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-    font-family: sans-serif;
-    background-color: rgba(130, 34, 34, 0.773);
-    line-height: 1.5;
+  font-family: sans-serif;
+  background-color: rgba(130, 34, 34, 0.773);
+  line-height: 1.5;
 }
+
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
-h2, p {
-    background-color: transparent;
-    color: #000;
+
+h2,
+p {
+  background-color: transparent;
+  color: #000;
 }
-h4, b {
-    color: white;
+
+h4,
+b {
+  color: white;
 }
+
 button {
-    background: none;
-    border: none;
-    cursor: pointer;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
+
 form label {
-    color: #000;
+  color: #000;
 }
 form input::placeholder,
 form textarea::placeholder {
-    color: #ddd;
+  color: #ddd;
 }
 
 .formulario-contacto .mb-3 {
-    background-color: #000;
-    padding: 1rem;
-    border-radius: 0.6rem;
+  background-color: #000;
+  padding: 1rem;
+  border-radius: 0.6rem;
 }
-
 .formulario-contacto .mb-3 label,
 .formulario-contacto .mb-3 p {
-    color: white;
+  color: white;
 }
-
 .formulario-contacto .mb-3 input,
 .formulario-contacto .mb-3 textarea {
-    width: 100%;
-    color: white;
-    background-color: transparent;
-    border: 1px solid #ccc;
+  width: 100%;
+  color: white;
+  background-color: transparent;
+  border: 1px solid #ccc;
 }
-
 .formulario-contacto .mb-3 input:focus,
 .formulario-contacto .mb-3 textarea:focus {
-    outline: none;
-    border-color: white;
+  outline: none;
+  border-color: white;
 }
 
-
-
+/* ================= HEADER ================= */
 header {
-    text-align: center;
-    padding: 1.5rem 1rem;
-    color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  color: white;
 }
-
 
 .logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
 }
-.logo h1{
-    font-family: sans-serif;
-    font-size: 3.5rem;
-    font-weight: 600;
+.logo h1 {
+  font-family: sans-serif;
+  font-size: 3.5rem;
+  font-weight: 600;
 }
 .logo a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.logo::before,
-.logo::after {
-    content: "";
-    width: 70%;
-    max-width: 320px;
-    height: 3px;
-    background-color: white;
+.logo::before, .logo::after {
+  content: "";
+  width: 70%;
+  max-width: 320px;
+  height: 3px;
+  background-color: white;
 }
-
 .logo img {
-    width: 120px;
-    height: auto;
+  width: 120px;
+  height: auto;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    list-style: none;
-    margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  margin-top: 1rem;
 }
-
 nav ul li a {
-    font-weight: 600;
+  font-weight: 600;
 }
-
 nav ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 
 footer {
-    text-align: center;
-    padding: 1.5rem 1rem;
-    color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  color: white;
 }
-
 
 
 .contenido-inicio {
-    background-image: url(../assest/logo-inicio.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    min-height: 100vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-
-    padding: 4rem 1.5rem;
-    text-align: center;
+  background-image: url(../assest/logo-inicio.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 4rem 1.5rem;
+  text-align: center;
 }
 
 .letras-inicio {
-    background-color: rgba(120, 120, 120, 0.55);
-    margin-bottom: 12rem;
-    padding: 2.5rem;
-    border-radius: 1.2rem;
-    max-width: 42rem;
+  background-color: rgba(120, 120, 120, 0.55);
+  margin-bottom: 12rem;
+  padding: 2.5rem;
+  border-radius: 1.2rem;
+  max-width: 42rem;
 }
-
 .letras-inicio h2 {
-    color: rgb(0, 0, 0);
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-    font-weight: 600;
+  color: #000;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
-
 .letras-inicio p {
-    color: rgb(255, 253, 253);
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-    font-weight: 900;
-    -webkit-text-stroke-width: 1px;   
-    -webkit-text-stroke-color: black;
+  color: rgb(255, 253, 253);
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  font-weight: 900;
+  -webkit-text-stroke: 1px black;
 }
-
 .letras-inicio button a {
-    display: inline-block;
-    background-color: white;
-    color: #333;
-    padding: 0.9rem 2rem;
-    border-radius: 2rem;
-    font-weight: 600;
-    transition: 0.3s;
+  display: inline-block;
+  background-color: white;
+  color: #333;
+  padding: 0.9rem 2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  transition: 0.3s;
 }
-
 .letras-inicio button a:hover {
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
-/* ======================================================
-   LISTADOS
-====================================================== */
 
 .Alquileres,
 .Propiedades {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 3rem 1.5rem;
-
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
-
 .Alquileres h2,
 .Propiedades h2 {
-    font-size: 4rem;
-    color: white;
-    text-align: center;
-    font-weight: 600;
-    -webkit-text-stroke: 1px black; 
-    font-family:fantasy;
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  -webkit-text-stroke: 1px black;
+  font-family: fantasy;
 }
-
 .Alquileres > p,
 .Propiedades > p {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    font-size: 1.2rem; 
-    color: rgba(255, 255, 255, 0.85);
-    text-align: center;
-    font-weight: 400;
-    line-height: 1.6;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-    font-family:sans-serif;
+  margin: 10px auto 30px;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  line-height: 1.6;
+  max-width: 700px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
-
 .Alquileres article,
 .Propiedades article {
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 1.2rem;
-    padding: 1.8rem;
-
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 1.2rem;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-
 .Alquileres article img,
 .Propiedades article img {
-    width: 100%;
-    border-radius: 0.9rem;
+  width: 100%;
+  border-radius: 0.9rem;
 }
-
 .Alquileres article h3,
 .Propiedades article h3 {
-    color: #222;
+  color: #222;
 }
-
-.Alquileres article h4 {
-    color: #822222;
+.Alquileres article h4,
+.Propiedades article h4 {
+  color: #822222;
 }
-
 .Alquileres article p,
 .Propiedades article p {
-    color: #444;
+  color: #444;
 }
-
-
-.btn-formulario,
 .Alquileres article button a,
 .Propiedades article button a {
-    background-color: #822222;
-    color: white;
-    padding: 0.7rem 1.6rem;
-    border-radius: 1.6rem;
-    font-weight: 600;
-    transition: 0.3s;
+  background-color: #822222;
+  color: white;
+  padding: 0.7rem 1.6rem;
+  border-radius: 1.6rem;
+  font-weight: 600;
+  transition: 0.3s;
 }
-
-.btn-formulario:hover,
 .Alquileres article button a:hover,
 .Propiedades article button a:hover {
-    background-color: #6d1b1b;
+  background-color: #6d1b1b;
 }
 
 
+.btn-formulario {
+  background-color: #822222;
+  color: white;
+  padding: 0.7rem 1.6rem;
+  border-radius: 1.6rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn-formulario:hover {
+  background-color: #6d1b1b;
+}
 
 @media (max-width: 992px) {
-
-    .pagina-contacto header,
-    .pagina-trabajo header {
-        padding: 1.2rem 1rem;
-    }
-
-    .pagina-contacto .logo img,
-    .pagina-trabajo .logo img {
-        width: 95px;
-    }
-
-    .pagina-contacto .formulario-contacto,
-    .pagina-trabajo .formulario-contacto {
-        padding: 1rem;
-    }
+  .pagina-contacto header,
+  .pagina-trabajo header {
+    padding: 1.2rem 1rem;
+  }
+  .pagina-contacto .logo img,
+  .pagina-trabajo .logo img {
+    width: 95px;
+  }
+  .pagina-contacto .formulario-contacto,
+  .pagina-trabajo .formulario-contacto {
+    padding: 1rem;
+  }
 }
-
 @media (max-width: 768px) {
-
-    .pagina-contacto header,
-    .pagina-trabajo header {
-        padding: 1rem;
-    }
-
-    .pagina-contacto .logo::before,
-    .pagina-contacto .logo::after,
-    .pagina-trabajo .logo::before,
-    .pagina-trabajo .logo::after {
-        display: none;
-    }
-
-    .pagina-contacto nav ul,
-    .pagina-trabajo nav ul {
-        gap: 0.7rem;
-        font-size: 0.9rem;
-    }
-
-    .pagina-contacto iframe {
-        width: 100%;
-        height: 280px;
-    }
+  .pagina-contacto header,
+  .pagina-trabajo header {
+    padding: 1rem;
+  }
+  .pagina-contacto .logo::before,
+  .pagina-contacto .logo::after,
+  .pagina-trabajo .logo::before,
+  .pagina-trabajo .logo::after {
+    display: none;
+  }
+  .pagina-contacto nav ul,
+  .pagina-trabajo nav ul {
+    gap: 0.7rem;
+    font-size: 0.9rem;
+  }
+  .pagina-contacto iframe,
+  .pagina-trabajo iframe {
+    width: 100%;
+    height: 280px;
+  }
 }
+
