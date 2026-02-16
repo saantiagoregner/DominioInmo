@@ -1,0 +1,249 @@
+.boton-base, .btn-formulario {
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgba(130, 34, 34, 0.773);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+form label {
+  color: #000;
+}
+form input::placeholder,
+form textarea::placeholder {
+  color: #ddd;
+}
+
+.formulario-contacto .mb-3 {
+  background-color: #000;
+  padding: 1rem;
+  border-radius: 0.6rem;
+}
+.formulario-contacto .mb-3 label,
+.formulario-contacto .mb-3 p {
+  color: #fff;
+}
+.formulario-contacto .mb-3 input,
+.formulario-contacto .mb-3 textarea {
+  width: 100%;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #ccc;
+}
+.formulario-contacto .mb-3 input:focus,
+.formulario-contacto .mb-3 textarea:focus {
+  outline: none;
+  border-color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+.logo h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.logo img {
+  width: 120px;
+}
+.logo::before, .logo::after {
+  content: "";
+  width: 70%;
+  max-width: 320px;
+  height: 3px;
+  background-color: #fff;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 1rem;
+}
+nav ul li a {
+  font-weight: 600;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  color: #fff;
+}
+
+.contenido-inicio {
+  background-image: url(../assest/logo-inicio.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+  justify-content: flex-end;
+  padding: 4rem 1.5rem;
+}
+
+.letras-inicio {
+  background-color: rgba(120, 120, 120, 0.55);
+  margin-bottom: 12rem;
+  padding: 2.5rem;
+  border-radius: 1.2rem;
+  max-width: 42rem;
+  text-align: center;
+}
+.letras-inicio h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.letras-inicio p {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #fff;
+  -webkit-text-stroke: 1px black;
+}
+.letras-inicio a {
+  background-color: #fff;
+  color: #fff;
+  padding: 0.7rem 1.6rem;
+  border-radius: 1.6rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.letras-inicio a:hover {
+  background-color: #eee;
+}
+.letras-inicio a {
+  color: #333;
+}
+
+.Alquileres,
+.Propiedades {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.Alquileres h2,
+.Propiedades h2 {
+  font-size: 4rem;
+  color: #fff;
+  text-align: center;
+  -webkit-text-stroke: 1px black;
+  font-family: fantasy;
+}
+.Alquileres article,
+.Propiedades article {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 1.2rem;
+  padding: 1.8rem;
+}
+.Alquileres article img,
+.Propiedades article img {
+  width: 100%;
+  border-radius: 0.9rem;
+}
+.Alquileres article a,
+.Propiedades article a {
+  background-color: #822222;
+  color: #fff;
+  padding: 0.7rem 1.6rem;
+  border-radius: 1.6rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.Alquileres article a:hover,
+.Propiedades article a:hover {
+  background-color: #6d1b1b;
+}
+
+.btn-formulario {
+  background-color: #822222;
+  color: #fff;
+  padding: 0.7rem 1.6rem;
+  border-radius: 1.6rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn-formulario:hover {
+  background-color: #6d1b1b;
+}
+
+.Alquileres {
+  border-top: 4px solid #822222;
+}
+
+.Propiedades {
+  border-top: 4px solid #822222;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .logo::before,
+  .logo::after {
+    display: none;
+  }
+  nav ul {
+    gap: 0.7rem;
+    font-size: 0.9rem;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
