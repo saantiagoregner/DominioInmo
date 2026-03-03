@@ -1,0 +1,42 @@
+.Alquileres,
+.Propiedades {
+max-width: 1100px;
+margin: 0 auto;
+padding: 3rem 1.5rem;
+display: flex;
+flex-direction: column;
+gap: 2.5rem;
+
+h2 {
+    font-size: 4rem;
+    color: $blanco;
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+}
+
+article {
+    background-color: white;
+    border-radius: 1.2rem;
+    padding: 1.8rem;
+
+    img {
+    width: 100%;
+    border-radius: 0.9rem;
+    }
+
+    h4 {
+    color: $color-rojo;
+    }
+
+    a {
+    background-color: $color-rojo;
+    color: $blanco;
+    padding: 0.7rem 1.6rem;
+    border-radius: 1.6rem;
+
+    &:hover {
+        background-color: $color-rojo-hover;
+    }
+    }
+}
+}
