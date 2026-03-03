@@ -1,0 +1,37 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+font-size: 16px;
+}
+
+body {
+font-family: sans-serif;
+background-color: $color-principal;
+line-height: 1.5;
+}
+
+a {
+text-decoration: none;
+color: $blanco;
+}
+
+h2,
+p {
+background-color: transparent;
+color: $negro;
+}
+
+h4,
+b {
+color: $blanco;
+}
+
+button {
+background: none;
+border: none;
+cursor: pointer;
+}
