@@ -1,0 +1,16 @@
+@media (max-width: 992px) {
+header {
+    padding: 1.2rem;
+}
+
+.logo img {
+    width: 95px;
+}
+}
+
+@media (max-width: 768px) {
+nav ul {
+    gap: 0.7rem;
+    font-size: 0.9rem;
+}
+}
