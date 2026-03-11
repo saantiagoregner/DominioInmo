@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 * {
   margin: 0;
   padding: 0;
@@ -8,71 +6,147 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: sans-serif;
   background-color: rgba(130, 34, 34, 0.773);
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
+  transition: color 0.2s ease;
 }
 
 h2,
 p {
   background-color: transparent;
-  color: #000;
+  color: #000000;
 }
 
 h4,
 b {
-  color: white;
+  color: #ffffff;
 }
 
 button {
   background: none;
   border: none;
   cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-primario {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #333;
+  padding: 0.75rem 1.8rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+.btn-primario:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.btn-primario:active {
+  transform: translateY(-1px);
+}
+.btn-primario:hover {
+  background-color: #822222;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(130, 34, 34, 0.4);
+}
+
+.btn-secundario {
+  display: inline-block;
+  background-color: #822222;
+  color: #ffffff;
+  padding: 0.75rem 1.8rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+.btn-secundario:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.btn-secundario:active {
+  transform: translateY(-1px);
+}
+.btn-secundario:hover {
+  background-color: #6d1b1b;
+  box-shadow: 0 8px 20px rgba(130, 34, 34, 0.4);
 }
 
 form label {
-  color: #000;
+  color: #000000;
 }
 form input::placeholder,
 form textarea::placeholder {
-  color: #ddd;
+  color: #dddddd;
 }
 
 .formulario-contacto .mb-3 {
-  background-color: #000;
+  background-color: #000000;
   padding: 1rem;
   border-radius: 0.6rem;
 }
 .formulario-contacto .mb-3 label,
 .formulario-contacto .mb-3 p {
-  color: white;
+  color: #ffffff;
 }
 .formulario-contacto .mb-3 input,
 .formulario-contacto .mb-3 textarea {
   width: 100%;
-  color: white;
+  color: #ffffff;
   background-color: transparent;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
 }
 .formulario-contacto .mb-3 input:focus,
 .formulario-contacto .mb-3 textarea:focus {
   outline: none;
-  border-color: white;
+  border-color: #ffffff;
 }
 
-/* ================= HEADER ================= */
+.btn-formulario {
+  display: inline-block;
+  background-color: #822222;
+  color: #ffffff;
+  padding: 0.75rem 1.8rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+.btn-formulario:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.btn-formulario:active {
+  transform: translateY(-1px);
+}
+.btn-formulario:hover {
+  background-color: #6d1b1b;
+  box-shadow: 0 8px 20px rgba(130, 34, 34, 0.4);
+}
+
 header {
   text-align: center;
   padding: 1.5rem 1rem;
-  color: white;
+  color: #ffffff;
 }
 
 .logo {
@@ -83,13 +157,11 @@ header {
   margin-bottom: 1rem;
 }
 .logo h1 {
-  font-family: sans-serif;
   font-size: 3.5rem;
   font-weight: 600;
 }
 .logo a {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .logo::before, .logo::after {
@@ -97,11 +169,10 @@ header {
   width: 70%;
   max-width: 320px;
   height: 3px;
-  background-color: white;
+  background-color: #ffffff;
 }
 .logo img {
   width: 120px;
-  height: auto;
 }
 
 nav ul {
@@ -110,7 +181,6 @@ nav ul {
   flex-wrap: wrap;
   gap: 1.5rem;
   list-style: none;
-  margin-top: 1rem;
 }
 nav ul li a {
   font-weight: 600;
@@ -119,60 +189,84 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-
 footer {
   text-align: center;
   padding: 1.5rem 1rem;
-  color: white;
+  color: #ffffff;
 }
 
-
-.contenido-inicio {
-  background-image: url(../assest/logo-inicio.webp);
+.Inicio {
+  background-image: url("../assest/logo-inicio.webp");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.contenido-inicio {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   padding: 4rem 1.5rem;
-  text-align: center;
 }
 
 .letras-inicio {
   background-color: rgba(120, 120, 120, 0.55);
+  backdrop-filter: blur(4px);
   margin-bottom: 12rem;
   padding: 2.5rem;
   border-radius: 1.2rem;
   max-width: 42rem;
+  text-align: center;
+}
+.letras-inicio h1 {
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 .letras-inicio h2 {
-  color: #000;
-  font-size: 2.2rem;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 400;
   margin-bottom: 1rem;
-  font-weight: 600;
+  opacity: 0.9;
 }
 .letras-inicio p {
-  color: rgb(255, 253, 253);
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-  font-weight: 900;
-  -webkit-text-stroke: 1px black;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
-.letras-inicio button a {
+.letras-inicio .btn-cta {
   display: inline-block;
-  background-color: white;
+  background-color: #ffffff;
   color: #333;
-  padding: 0.9rem 2rem;
+  padding: 0.75rem 1.8rem;
   border-radius: 2rem;
   font-weight: 600;
-  transition: 0.3s;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
-.letras-inicio button a:hover {
-  transform: translateY(-2px);
+.letras-inicio .btn-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-
+.letras-inicio .btn-cta:active {
+  transform: translateY(-1px);
+}
+.letras-inicio .btn-cta:hover {
+  background-color: #822222;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(130, 34, 34, 0.4);
+}
 
 .Alquileres,
 .Propiedades {
@@ -186,9 +280,8 @@ footer {
 .Alquileres h2,
 .Propiedades h2 {
   font-size: 4rem;
-  color: white;
+  color: #ffffff;
   text-align: center;
-  font-weight: 600;
   -webkit-text-stroke: 1px black;
   font-family: fantasy;
 }
@@ -204,91 +297,177 @@ footer {
 }
 .Alquileres article,
 .Propiedades article {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: white;
   border-radius: 1.2rem;
   padding: 1.8rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.Alquileres article:hover,
+.Propiedades article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 .Alquileres article img,
 .Propiedades article img {
   width: 100%;
   border-radius: 0.9rem;
+  object-fit: cover;
+  height: 350px;
+  transition: height 0.4s ease;
+}
+.Alquileres article img:hover,
+.Propiedades article img:hover {
+  height: 500px;
 }
 .Alquileres article h3,
 .Propiedades article h3 {
   color: #222;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 .Alquileres article h4,
 .Propiedades article h4 {
   color: #822222;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 .Alquileres article p,
 .Propiedades article p {
-  color: #444;
+  color: #555;
+  font-size: 0.95rem;
 }
-.Alquileres article button a,
-.Propiedades article button a {
+.Alquileres article a,
+.Propiedades article a {
+  display: inline-block;
   background-color: #822222;
-  color: white;
-  padding: 0.7rem 1.6rem;
-  border-radius: 1.6rem;
+  color: #ffffff;
+  padding: 0.75rem 1.8rem;
+  border-radius: 2rem;
   font-weight: 600;
-  transition: 0.3s;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
-.Alquileres article button a:hover,
-.Propiedades article button a:hover {
+.Alquileres article a:hover,
+.Propiedades article a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.Alquileres article a:active,
+.Propiedades article a:active {
+  transform: translateY(-1px);
+}
+.Alquileres article a:hover,
+.Propiedades article a:hover {
   background-color: #6d1b1b;
+  box-shadow: 0 8px 20px rgba(130, 34, 34, 0.4);
 }
-
-
-.btn-formulario {
-  background-color: #822222;
-  color: white;
-  padding: 0.7rem 1.6rem;
-  border-radius: 1.6rem;
-  font-weight: 600;
-  transition: 0.3s;
-}
-.btn-formulario:hover {
-  background-color: #6d1b1b;
+.Alquileres article a,
+.Propiedades article a {
+  align-self: flex-start;
 }
 
 @media (max-width: 992px) {
-  .pagina-contacto header,
-  .pagina-trabajo header {
-    padding: 1.2rem 1rem;
+  header {
+    padding: 1.2rem;
   }
-  .pagina-contacto .logo img,
-  .pagina-trabajo .logo img {
+  .logo h1 {
+    font-size: 2.5rem;
+  }
+  .logo img {
     width: 95px;
   }
-  .pagina-contacto .formulario-contacto,
-  .pagina-trabajo .formulario-contacto {
-    padding: 1rem;
+  .Alquileres h2,
+  .Propiedades h2 {
+    font-size: 3rem;
+  }
+  .letras-inicio {
+    margin-bottom: 6rem;
+    padding: 2rem;
+  }
+  .letras-inicio h1 {
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 768px) {
-  .pagina-contacto header,
-  .pagina-trabajo header {
+  .logo h1 {
+    font-size: 1.8rem;
+  }
+  .logo::before,
+  .logo::after {
+    width: 50%;
+  }
+  nav ul {
+    gap: 0.6rem;
+    font-size: 0.85rem;
+  }
+  .letras-inicio {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+  .letras-inicio h1 {
+    font-size: 1.5rem;
+  }
+  .letras-inicio h2 {
+    font-size: 0.95rem;
+  }
+  .letras-inicio p {
+    font-size: 1rem;
+  }
+  .Alquileres,
+  .Propiedades {
+    padding: 2rem 1rem;
+  }
+  .Alquileres h2,
+  .Propiedades h2 {
+    font-size: 2rem;
+    -webkit-text-stroke: 0.5px black;
+  }
+  .Alquileres > p,
+  .Propiedades > p {
+    font-size: 1rem;
+  }
+  .Alquileres article,
+  .Propiedades article {
+    padding: 1.2rem;
+  }
+  .Alquileres article img,
+  .Propiedades article img {
+    height: 220px;
+  }
+  .Alquileres article h3,
+  .Propiedades article h3 {
+    font-size: 1.1rem;
+  }
+  footer {
+    font-size: 0.9rem;
     padding: 1rem;
   }
-  .pagina-contacto .logo::before,
-  .pagina-contacto .logo::after,
-  .pagina-trabajo .logo::before,
-  .pagina-trabajo .logo::after {
-    display: none;
+  .datos-contacto {
+    padding: 0 1rem;
+    font-size: 0.95rem;
   }
-  .pagina-contacto nav ul,
-  .pagina-trabajo nav ul {
-    gap: 0.7rem;
-    font-size: 0.9rem;
+}
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 1.4rem;
   }
-  .pagina-contacto iframe,
-  .pagina-trabajo iframe {
-    width: 100%;
-    height: 280px;
+  nav ul {
+    font-size: 0.78rem;
+    gap: 0.4rem;
+  }
+  .letras-inicio h1 {
+    font-size: 1.3rem;
+  }
+  .Alquileres h2,
+  .Propiedades h2 {
+    font-size: 1.6rem;
   }
 }
 
+/*# sourceMappingURL=estilos.css.map */

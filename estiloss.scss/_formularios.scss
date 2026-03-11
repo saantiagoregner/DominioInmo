@@ -36,14 +36,5 @@ textarea::placeholder {
 }
 
 .btn-formulario {
-background-color: $color-rojo;
-color: $blanco;
-padding: 0.7rem 1.6rem;
-border-radius: 1.6rem;
-font-weight: 600;
-transition: 0.3s;
-
-&:hover {
-    background-color: $color-rojo-hover;
-}
+@include btn-secundario;
 }

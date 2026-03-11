@@ -6,17 +6,20 @@ box-sizing: border-box;
 
 html {
 font-size: 16px;
+scroll-behavior: smooth;
 }
 
 body {
 font-family: sans-serif;
 background-color: $color-principal;
 line-height: 1.5;
+-webkit-font-smoothing: antialiased;
 }
 
 a {
 text-decoration: none;
 color: $blanco;
+transition: color 0.2s ease;
 }
 
 h2,
@@ -34,4 +37,14 @@ button {
 background: none;
 border: none;
 cursor: pointer;
+font-family: inherit;
+}
+
+
+.btn-primario {
+@include btn-primario;
+}
+
+.btn-secundario {
+@include btn-secundario;
 }
