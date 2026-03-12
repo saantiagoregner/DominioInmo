@@ -1,3 +1,4 @@
+@use "variables" as *;
 @media (max-width: 992px) {
 header {
     padding: 1.2rem;
@@ -23,6 +24,10 @@ header {
 
 .letras-inicio h1 {
     font-size: 1.8rem;
+}
+
+.grid-cards {
+    grid-template-columns: 1fr;
 }
 }
 
@@ -98,6 +103,10 @@ footer {
 .datos-contacto {
     padding: 0 1rem;
     font-size: 0.95rem;
+}
+
+.grid-cards {
+    grid-template-columns: 1fr;
 }
 }
 

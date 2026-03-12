@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "mixins" as *;
+
 .Inicio {
 background-image: url("../assest/logo-inicio.webp");
 background-repeat: no-repeat;
