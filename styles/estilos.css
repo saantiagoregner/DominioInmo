@@ -402,9 +402,6 @@ footer {
   .letras-inicio h1 {
     font-size: 1.8rem;
   }
-  .grid-cards {
-    grid-template-columns: 1fr;
-  }
 }
 @media (max-width: 768px) {
   .logo h1 {
@@ -464,9 +461,6 @@ footer {
   .datos-contacto {
     padding: 0 1rem;
     font-size: 0.95rem;
-  }
-  .grid-cards {
-    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 480px) {
